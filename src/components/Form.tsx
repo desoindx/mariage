@@ -43,7 +43,7 @@ const Form = () => {
         <div>
           <form onSubmit={handleSubmit} className={styles.form}>
             <label htmlFor="password">
-              Pour plus d&lsquo;infos, c&lsquo;est par la :
+              Pour plus d&lsquo;infos, c&lsquo;est par là :
             </label>
             <input
               className={styles.input}
