@@ -9,6 +9,11 @@
 
 .info {
   text-align: center;
+
+  h1, h2 {
+    font-weight: normal !important;
+  }
+
 }
 
 .form {
@@ -25,4 +30,26 @@
   font-size: 0.875rem;
   position: absolute;
   bottom: -1.25rem;
+}
+
+.input {
+  background-color: white;
+  appearance: none;
+  border: none;
+  font-size: 1.25rem;
+  outline-color: #EFE973;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  background-color: #efd473;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #EFE973;
+  }
 }

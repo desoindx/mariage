@@ -1,6 +1,20 @@
+.container {
+  text-align: center;
+}
+
+.smallImage,
+.image {
+  object-fit: cover;
+  object-position: top;
+}
+
+.smallImage {
+  margin-top: 1rem;
+  width: auto;
+  height: 33vh;
+}
+
 .image {
   width: 100vw;
   max-height: 66vh;
-  object-fit: cover;
-  object-position: top;
 }

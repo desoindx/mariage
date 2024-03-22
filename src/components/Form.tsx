@@ -1,10 +1,11 @@
 "use client";
 
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import styles from "./Form.module.css";
 import Header from "./Header";
 
 const Form = () => {
+  const ref = useRef<HTMLInputElement>(null);
   const [password, setPassword] = useState("");
   const [passwordIncorrect, setPasswordIncorrect] = useState(false);
 
@@ -24,6 +25,11 @@ const Form = () => {
     }
   };
 
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  }, [ref]);
   return (
     <>
       <Header />
@@ -37,16 +43,20 @@ const Form = () => {
         <div>
           <form onSubmit={handleSubmit} className={styles.form}>
             <label htmlFor="password">
-              Pour plus d&lsquo;info, c&lsquo;est par la :
+              Pour plus d&lsquo;infos, c&lsquo;est par la :
             </label>
             <input
+              className={styles.input}
+              ref={ref}
               type="password"
               id="password"
               value={password}
               placeholder="Mot de passe..."
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">Submit</button>
+            <button className={styles.button} type="submit">
+              Voir les infos
+            </button>
             {passwordIncorrect && (
               <div className={styles.incorrect}>Bien essayé...</div>
             )}

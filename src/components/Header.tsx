@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ small }: { small?: boolean }) => {
   return (
-    <>
-      <img src="/header.jpg" alt="" className={styles.image} />
-    </>
+    <div className={styles.container}>
+      <img
+        src="/header.jpg"
+        alt=""
+        className={small ? styles.smallImage : styles.image}
+      />
+    </div>
   );
 };
 
