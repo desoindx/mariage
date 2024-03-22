@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Mariage Anouck & Benjamin",
   description: "Toutes les infos sur le mariage :)",
   openGraph: {
-    images: ["/header.jpg"],
+    images: "https://www.mariage-benoucks.com//header.jpg",
   },
 };
 
