@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     });
   }
   const salt = await bcrypt.genSaltSync(saltRounds);
-  const hash = await bcrypt.hashSync(process.env.PAGE_PASSWORD!, salt);
+  const hash = await bcrypt.hashSync(password, salt);
 
   const cookie = serialize(process.env.PASSWORD_COOKIE_NAME!, hash, {
     httpOnly: true,

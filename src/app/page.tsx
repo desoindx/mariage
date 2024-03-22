@@ -12,11 +12,6 @@ export default function Home() {
     loginCookies &&
     bcrypt.compareSync(process.env.MAIN_PAGE_PASSWORD!, loginCookies.value);
 
-  console.log(
-    loginCookies,
-    loginCookies &&
-      bcrypt.compareSync(process.env.MAIN_PAGE_PASSWORD!, loginCookies.value)
-  );
   if (mainPage) {
     return (
       <main>
