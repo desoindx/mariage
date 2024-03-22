@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const password = data.password;
 
   if (
-    process.env.MAIN_PAGE_PASSWORD !== password ||
+    process.env.MAIN_PAGE_PASSWORD !== password &&
     process.env.SECOND_PAGE_PASSWORD !== password
   ) {
     return new Response("incorrect password", {

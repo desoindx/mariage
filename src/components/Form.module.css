@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .info {
@@ -11,10 +12,17 @@
 }
 
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   min-width: 300px;
+}
+
+.incorrect {
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: -1.25rem;
 }

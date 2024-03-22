@@ -9,6 +9,8 @@ const Form = () => {
   const [passwordIncorrect, setPasswordIncorrect] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setPasswordIncorrect(false);
     const request = await fetch(`/api`, {
       body: JSON.stringify({ password }),
       headers: { "Content-Type": "application/json" },
@@ -28,7 +30,7 @@ const Form = () => {
       <div className={styles.container}>
         <div className={styles.info}>
           <div>
-            <h1>On se marie !!!!</h1>
+            <h1>On se marie !</h1>
             <h2>Le 21 septembre 2024</h2>
           </div>
         </div>
@@ -45,7 +47,9 @@ const Form = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit">Submit</button>
-            {passwordIncorrect && <div>Bien essayé...</div>}
+            {passwordIncorrect && (
+              <div className={styles.incorrect}>Bien essayé...</div>
+            )}
           </form>
         </div>
       </div>
