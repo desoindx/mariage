@@ -1,0 +1,6 @@
+.image {
+  width: 100vw;
+  max-height: 66vh;
+  object-fit: cover;
+  object-position: top;
+}
