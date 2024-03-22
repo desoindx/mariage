@@ -5,7 +5,7 @@ const Header = ({ small }: { small?: boolean }) => {
   return (
     <div className={styles.container}>
       <img
-        src="/header.jpg"
+        src="/header.jpeg"
         alt=""
         className={small ? styles.smallImage : styles.image}
       />
