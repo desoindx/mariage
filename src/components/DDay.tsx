@@ -117,7 +117,7 @@ const DDay = () => {
       <br />
       <br />
       RSVP : au 21 mai, pour nous laisser le temps de faire le plan de table
-      puis de partir en vacances
+      puis de partir en vacances.
       <br />
       <br />
       <br />
@@ -125,13 +125,14 @@ const DDay = () => {
       <div className={styles.title}>Cadeau</div>
       Votre présence est notre plus beau cadeau, si vous le souhaitez :
       <br />
-      Lien cagnotte à venir
+      Lien cagnotte à venir.
       <br />
       <br />
       <br />
       On a hâte de vous voir tous !
       <br />
-      Anouck et Benjamin
+      <br />
+      <div className={styles.title}>Anouck et Benjamin</div>
     </div>
   );
 };
