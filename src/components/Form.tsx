@@ -58,7 +58,7 @@ const Form = () => {
               Voir les infos
             </button>
             {passwordIncorrect && (
-              <div className={styles.incorrect}>Bien essayé...</div>
+              <div className={styles.incorrect}>Mot de passe incorrect...</div>
             )}
           </form>
         </div>
