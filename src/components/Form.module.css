@@ -28,6 +28,8 @@
 
 .incorrect {
   font-size: 0.875rem;
+  color: red;
+  font-weight: bold;
   position: absolute;
   bottom: -1.25rem;
 }
