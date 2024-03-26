@@ -125,7 +125,12 @@ const DDay = () => {
       <div className={styles.title}>Cadeau</div>
       Votre présence est notre plus beau cadeau, si vous le souhaitez :
       <br />
-      Lien cagnotte à venir.
+      <a
+        href="https://www.millemercismariage.com/benoucks/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Notre liste de mariage par ici!
+      </a>
       <br />
       <br />
       <br />
