@@ -20,7 +20,7 @@ const DDay = () => {
       Bus: 66 devant la mairie; 21, 54 et 74 à quelques minutes à pied.
       <br />
       <br />
-      La cérémonie commence à 11h30 et dure une heure environ.
+      La cérémonie commence à 11h30 et dure une demie heure environ.
       <br />
       <br />
       <br />
