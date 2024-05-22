@@ -116,7 +116,7 @@ const DDay = () => {
       <br />
       <br />
       <br />
-      RSVP : au 21 mai, pour nous laisser le temps de faire le plan de table
+      RSVP : au 30 juin, pour nous laisser le temps de faire le plan de table
       puis de partir en vacances.
       <br />
       <br />
