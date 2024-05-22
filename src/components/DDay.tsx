@@ -116,12 +116,6 @@ const DDay = () => {
       <br />
       <br />
       <br />
-      RSVP : au 30 juin, pour nous laisser le temps de faire le plan de table
-      puis de partir en vacances.
-      <br />
-      <br />
-      <br />
-      <br />
       <div className={styles.title}>Cadeau</div>
       Votre présence est notre plus beau cadeau, si vous le souhaitez :
       <br />
