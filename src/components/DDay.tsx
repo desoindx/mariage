@@ -20,7 +20,7 @@ const DDay = () => {
       Bus: 66 devant la mairie; 21, 54 et 74 à quelques minutes à pied.
       <br />
       <br />
-      La cérémonie commence à 11h30 et dure une demie heure environ.
+      La cérémonie commence à 11h30 et dure une demi heure environ.
       <br />
       <br />
       <br />
@@ -123,7 +123,7 @@ const DDay = () => {
         href="https://www.millemercismariage.com/benoucks/"
         target="_blank"
         rel="noopener noreferrer"
-      >Notre liste de mariage par ici!
+      >Notre liste de mariage par ici: https://www.millemercismariage.com/benoucks/
       </a>
       <br />
       <br />
